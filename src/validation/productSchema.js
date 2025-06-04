@@ -1,5 +1,6 @@
 import * as Yup from 'yup';
 import { Product } from '../models/Product';
+import ProductImageSchema from "../models/ProductImage";
 
 
 export const productSchema: Yup.SchemaOf<Product> = Yup.object({
@@ -50,5 +51,5 @@ export const productSchema: Yup.SchemaOf<Product> = Yup.object({
     height: Yup.number().nullable(true).optional(),
     width: Yup.number().nullable(true).optional(),
     weight: Yup.number().nullable(true).optional(),
-
+    productImages: Yup.array().of(Yup.string().url('Must be valid URL')).default([]),
 });

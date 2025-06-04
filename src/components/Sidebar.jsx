@@ -69,7 +69,7 @@ const Sidebar = () => {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className={`nav-link ${location.pathname === "/products" ? "active" : ""}`}
+                            <Link className={`nav-link ${location.pathname === "/products" || "/product-form" ? "active" : ""}`}
                                   to="/products">
                                 <i className="nav-icon fas fa-store"></i>
                                 <p>Products</p>

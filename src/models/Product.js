@@ -1,3 +1,5 @@
+import {ProductImage} from "./ProductImage";
+
 export interface Product {
     id: number;
     name: string;
@@ -21,4 +23,6 @@ export interface Product {
     countryOfOrigin?: string;
     unitMeasurementInHeight?: string;
     unitMeasurementInWeight?: string;
+
+    productImages?: ProductImage[];
 }

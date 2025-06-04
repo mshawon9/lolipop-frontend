@@ -5,7 +5,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import {format} from "date-fns";
 import {toast} from "react-toastify";
 import {dateValidationSchema} from "../validation/validationSchema"
-import {Link, useLocation} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const ProductList = () => {
     const [products, setProducts] = useState([]);
